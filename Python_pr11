@@ -1,0 +1,23 @@
+# Завдання 1 — Оцінки за тест
+grades_list = [85, 60, 90, 70, 55, 100, 40, 78]
+high_grades = [grade for grade in grades_list if grade > 70]
+
+print("Високі оцінки:", high_grades)
+print("Кількість високих оцінок:", len(high_grades))
+
+# Завдання 2 — Список покупок
+shopping_items = ["молоко", "хліб", "масло", "яйця", "сир", "яблука"]
+long_named_items = [item for item in shopping_items if len(item) > 4]
+
+print("\nТовари з назвою довше 4 символів:", long_named_items)
+print("Кількість таких товарів:", len(long_named_items))
+
+# Завдання 3 — Пошук дубльованих значень
+number_sequence = [1, 2, 3, 4, 3, 2, 5, 6, 5, 7]
+duplicates_found = []
+
+for number in number_sequence:
+    if number_sequence.count(number) > 1 and number not in duplicates_found:
+        duplicates_found.append(number)
+
+print("\nПовторювані значення (без дублів):", duplicates_found)
